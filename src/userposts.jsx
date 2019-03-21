@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export class UserPosts extends React.Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
-    posts: PropTypes.oneOf(
+    posts: PropTypes.arrayOf(
       PropTypes.shape({
         _id: PropTypes.string.isRequired,
         content: PropTypes.string.isRequired,
