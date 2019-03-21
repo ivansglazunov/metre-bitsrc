@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export class Firstname extends React.Component {
   static propTypes = {
-    user: PropTypes.object.isRequired,
+    user: PropTypes.object,
     open: PropTypes.bool.isRequired,
     toggle: PropTypes.func.isRequired,
     create: PropTypes.func.isRequired,
